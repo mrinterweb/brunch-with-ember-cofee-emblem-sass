@@ -1,6 +1,9 @@
 {
-  "author": "Giovanni Collazo",
-  "name": "brunch-with-ember-reloaded",
+  "author": "Sean McCleary",
+  "contributors": [
+    { "name": "Giovanni Collazo" }
+  ],
+  "name": "brunch-with-ember-cofee-emblem-sass",
   "description": "A new and up-to-date Brunch skeleton for developing Ember applications",
   "version": "0.0.3",
   "homepage": "",
@@ -9,25 +12,24 @@
     "url": ""
   },
   "engines": {
-    "node": "~0.6.10 || 0.8 || 0.9"
+    "node": "~0.10"
   },
   "scripts": {
     "start": "brunch watch --server"
   },
   "dependencies": {
-    "javascript-brunch": ">= 1.0 < 1.6",
-    "coffee-script-brunch": ">= 1.0 < 1.6",
+    "javascript-brunch": ">= 1.6",
+    "coffee-script-brunch": ">= 1.7.2",
 
-    "css-brunch": ">= 1.0 < 1.6",
-    "stylus-brunch": ">= 1.0 < 1.6",
+    "emblem-brunch": ">= 0.1.1",
 
-    "uglify-js-brunch": ">= 1.0 < 1.6",
-    "clean-css-brunch": ">= 1.0 < 1.6",
+    "css-brunch": ">= 1.6",
+    "sass-brunch": ">= 1.6.1",
 
-    "auto-reload-brunch": ">= 1.0 < 1.6",
-    "ember-handlebars-brunch": "git+ssh://git@github.com:bartsqueezy/ember-handlebars-brunch.git"
-  },
-  "devDependencies": {
-    "karma": "0.8.1"
+    "uglify-js-brunch": ">= 1.7.2",
+    "clean-css-brunch": ">= 1.6",
+
+    "auto-reload-brunch": ">= 1.6.4",
+    "ember-handlebars-brunch": ">= 1.0.4"
   }
 }

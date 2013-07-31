@@ -1,4 +1,6 @@
 # brunch-with-ember-reloaded
+I forked Giovanni Collazo's brunch-with-ember-reloaded, updated libraries, updated dependencies, added emblem, removed stylus, added sass.
+
 A new and up-to-date [Brunch](http://brunch.io) skeleton for developing [Ember](http://emberjs.com) applications based on the official Ember [Starter Kit](https://github.com/emberjs/starter-kit/archive/master.zip).
 
 ## Demo

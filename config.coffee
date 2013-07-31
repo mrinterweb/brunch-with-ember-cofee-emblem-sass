@@ -11,10 +11,10 @@ exports.config =
 
       order:
         before: [
-          'vendor/scripts/console-polyfill.js'
-          'vendor/scripts/jquery-1.9.1.js'
-          'vendor/scripts/handlebars-1.0.rc.4.js'
-          'vendor/scripts/ember-1.0.0-rc.6.js'
+          'vendor/scripts/jquery-2.0.3.js'
+          'vendor/scripts/handlebars-1.0.0-rc.4.js'
+          'vendor/scripts/ember-1.0.0-rc.6.1.js'
+          'vendor/scripts/emblem.js'
           ]
 
     stylesheets:
@@ -30,6 +30,12 @@ exports.config =
 
       modules:
         addSourceURLs: true
+
+      paths:
+        jquery: 'vendor/scripts/jquery-2.0.3.js'
+        ember: 'vendor/scripts/ember-1.0.0-rc.6.1.js'
+        handlebars: 'vendor/scripts/handlebars-1.0.0-rc.4.js'
+        emblem: 'vendor/scripts/emblem.js'
 
   # allow _ prefixed templates so partials work
   conventions:
