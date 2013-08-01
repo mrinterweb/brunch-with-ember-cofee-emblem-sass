@@ -5,29 +5,24 @@ I forked Giovanni Collazo's brunch-with-ember-reloaded, updated libraries, updat
 
 A new and up-to-date [Brunch](http://brunch.io) skeleton for developing [Ember](http://emberjs.com) applications based on the official Ember [Starter Kit](https://github.com/emberjs/starter-kit/archive/master.zip).
 
-## Demo
-I built a demo app using this skeleton, based on the [Building an App with Ember.js](http://www.youtube.com/watch?v=Ga99hMi7wfY) video by [Tom Dale](http://twitter.com/tomdale).
-
-**Demo**: [ember-bloggr](http://dev.gcollazo.com/ember-bloggr)
-**Source**: [https://github.com/gcollazo/ember-bloggr](https://github.com/gcollazo/ember-bloggr)
-
 ## Versions
-- [Ember v1.0.0-rc.6](http://emberjs.com)
+- [Ember v1.0.0-rc.6.1](http://emberjs.com)
 - [Handlebars 1.0.0-rc.4](http://handlebarsjs.com)
-- [jQuery v1.9.1](http://jquery.com)
+- [jQuery v2.0.3](http://jquery.com)
 - [HTML5 Boilerplate v4.2.0](http://html5boilerplate.com)
 
 ## Features
-- **CoffeeScript** - a little language that compiles into JavaScript.
-- **Stylus** - Expressive, dynamic, robust CSS pre-processor.
-- **auto-reload-brunch** - Adds automatic browser reloading support to brunch.
-- **uglify-js-brunch** - Adds UglifyJS support to brunch.
+- **CoffeeScript** - A little language that compiles into JavaScript
+- **Sass** - Expressive, dynamic, robust CSS pre-processor
+- **Emblem.js** - A handlebars pre-processor that allows for HAML like templating
+- **auto-reload-brunch** - Adds automatic browser reloading support to brunch
+- **uglify-js-brunch** - Adds UglifyJS support to brunch
 
 ## Getting started
 
 ```
-brunch new <appname> --skeleton git@github.com:gcollazo/brunch-with-ember-reloaded.git
-cd <appname>
+brunch new gh:mrinterweb/brunch-with-ember-coffee-emblem-sass <my-app-dir-name>
+cd <my-app-dir-name>
 brunch watch -s
 ```
 Open [http://localhost:3333](http://localhost:3333) on your browser.
