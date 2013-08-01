@@ -1,4 +1,4 @@
-# brunch-with-ember-cofee-emblem-sass
+# brunch-with-ember-coffee-emblem-sass
 I forked Giovanni Collazo's brunch-with-ember-reloaded, updated libraries, updated dependencies, added emblem, removed stylus, added sass.
 
 99.9% of all the work done on this is thanks to Giovanni Collazo. I have not even got around to renaming stuff. I'm lazy and I just want this to work.
@@ -56,15 +56,17 @@ There's a few more commands you can use with scaffolt and also instruction on ho
 ### Testing
 You can write your tests in the `test` folder, just make sure they are named `*_test.coffee`. You can customize the test to user PhantomJS, Chrome, Firefox, Safari or Opera on the `test/karma.conf.js` file. There's a lot of other settings there as well. Run tests with:
 
+Install karma to automate your testing: `npm insall -g karma`
+
 ```
-cake test
+karma start
 ```
 
 
 ## License
-All of brunch-with-ember-reloaded is licensed under the MIT license.
+All of brunch-with-ember-coffee-emblem-sass is licensed under the MIT license.
 
-Copyright (c) 2013 Giovanni Collazo
+Copyright (c) 2013 Sean McCleary
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

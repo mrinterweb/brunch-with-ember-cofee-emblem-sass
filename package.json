@@ -31,5 +31,8 @@
 
     "auto-reload-brunch": ">= 1.6.4",
     "ember-handlebars-brunch": ">= 1.0.4"
+  },
+  "devDependencies": {
+    "karma": ">= 0.9.6"
   }
 }
