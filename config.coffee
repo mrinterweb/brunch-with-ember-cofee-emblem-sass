@@ -12,8 +12,8 @@ exports.config =
       order:
         before: [
           'vendor/scripts/jquery-2.0.3.js'
-          'vendor/scripts/handlebars-1.0.0-rc.4.js'
-          'vendor/scripts/ember-1.0.0-rc.6.1.js'
+          'vendor/scripts/handlebars-1.0.0.js'
+          'vendor/scripts/ember-1.0.0-rc.7.js'
           'vendor/scripts/emblem.js'
           ]
 
@@ -33,8 +33,8 @@ exports.config =
 
       paths:
         jquery: 'vendor/scripts/jquery-2.0.3.js'
-        ember: 'vendor/scripts/ember-1.0.0-rc.6.1.js'
-        handlebars: 'vendor/scripts/handlebars-1.0.0-rc.4.js'
+        ember: 'vendor/scripts/ember-1.0.0-rc.7.js'
+        handlebars: 'vendor/scripts/handlebars-1.0.0.js'
         emblem: 'vendor/scripts/emblem.js'
 
   # allow _ prefixed templates so partials work
