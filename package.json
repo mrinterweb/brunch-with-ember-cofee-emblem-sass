@@ -30,7 +30,7 @@
     "clean-css-brunch": ">= 1.6",
 
     "auto-reload-brunch": ">= 1.6.4",
-    "ember-handlebars-brunch": ">= 1.0.4"
+    "ember-handlebars-brunch": "git+https://github.com/fuseelements/ember-handlebars-brunch.git#fix/hbs-1.0.0"
   },
   "devDependencies": {
     "karma": ">= 0.9.6"
