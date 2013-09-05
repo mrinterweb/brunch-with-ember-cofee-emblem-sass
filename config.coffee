@@ -2,6 +2,9 @@ sysPath = require 'path'
 
 exports.config =
   # See http://brunch.io/#documentation for documentation.
+  modules:
+    definition: false
+    wrapper: false
   files:
     javascripts:
       joinTo:
@@ -11,9 +14,9 @@ exports.config =
 
       order:
         before: [
-          'vendor/scripts/jquery-2.0.3.js'
+          'vendor/scripts/jquery-1.9.1.js'
           'vendor/scripts/handlebars-1.0.0.js'
-          'vendor/scripts/ember-1.0.0-rc.7.js'
+          'vendor/scripts/ember-1.0.0.js'
           'vendor/scripts/emblem.js'
           ]
 
@@ -24,6 +27,7 @@ exports.config =
         before: ['vendor/styles/normalize.css']
 
     templates:
+      wrapper: false
       precompile: true
       root: 'templates'
       joinTo: 'javascripts/app.js' : /^app/
@@ -32,9 +36,9 @@ exports.config =
         addSourceURLs: true
 
       paths:
-        jquery: 'vendor/scripts/jquery-2.0.3.js'
-        ember: 'vendor/scripts/ember-1.0.0-rc.7.js'
+        jquery: 'vendor/scripts/jquery-1.9.1.js'
         handlebars: 'vendor/scripts/handlebars-1.0.0.js'
+        ember: 'vendor/scripts/ember-1.0.0.js'
         emblem: 'vendor/scripts/emblem.js'
 
   # allow _ prefixed templates so partials work
