@@ -21,7 +21,7 @@
     "javascript-brunch": ">= 1.6",
     "coffee-script-brunch": ">= 1.7.2",
 
-    "emblem-brunch": ">= 0.1.1",
+    "emblem-brunch": "git+https://github.com/mrinterweb/emblem-brunch.git#master",
 
     "css-brunch": ">= 1.6",
     "sass-brunch": ">= 1.6.1",
