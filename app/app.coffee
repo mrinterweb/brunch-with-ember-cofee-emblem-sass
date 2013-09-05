@@ -1,3 +1,5 @@
 # Application bootstrapper
+App = Ember.Application.create({})
 
-module.exports = Ember.Application.create({})
+App.Router.map ->
+  # put your routes here
