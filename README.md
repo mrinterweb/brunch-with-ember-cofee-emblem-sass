@@ -6,9 +6,9 @@ I forked Giovanni Collazo's brunch-with-ember-reloaded, updated libraries, updat
 A new and up-to-date [Brunch](http://brunch.io) skeleton for developing [Ember](http://emberjs.com) applications based on the official Ember [Starter Kit](https://github.com/emberjs/starter-kit/archive/master.zip).
 
 ## Versions
-- [Ember v1.0.0-rc.7](http://emberjs.com)
-- [Handlebars 1.0.0](http://handlebarsjs.com)
-- [jQuery v2.0.3](http://jquery.com)
+- [Ember v1.2.0](http://emberjs.com)
+- [Handlebars 1.1.2](http://handlebarsjs.com)
+- [jQuery v1.10.2](http://jquery.com)
 - [HTML5 Boilerplate v4.2.0](http://html5boilerplate.com)
 
 ## Features
