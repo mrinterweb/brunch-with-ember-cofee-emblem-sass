@@ -14,9 +14,9 @@ exports.config =
 
       order:
         before: [
-          'vendor/scripts/jquery-1.9.1.js'
-          'vendor/scripts/handlebars-1.0.0.js'
-          'vendor/scripts/ember-1.0.0.js'
+          'vendor/scripts/jquery-1.10.2.js'
+          'vendor/scripts/handlebars-1.1.2.js'
+          'vendor/scripts/ember-1.2.0.js'
           'vendor/scripts/emblem.js'
           ]
 
