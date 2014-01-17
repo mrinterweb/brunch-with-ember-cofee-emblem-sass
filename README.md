@@ -27,6 +27,18 @@ brunch watch -s
 ```
 Open [http://localhost:3333](http://localhost:3333) on your browser.
 
+There are two ruby rake tasks that will help you download the latest ember.js, emblem.js, handlebars.js
+
+To find out what rake tasks are available:
+```
+rake -T
+```
+
+If you are running a rake task with arguments with the zsh shell, you need to escape it like this:
+```
+rake update:upgrade_ember\[beta\]
+```
+
 ### Ember Data
 There's a little cake task to download the Ember Data from [builds.emberjs.com](http://builds.emberjs.com) and copy it to your `vendor/scripts` directory.
 
