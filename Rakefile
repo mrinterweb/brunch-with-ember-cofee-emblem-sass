@@ -1,4 +1,3 @@
-require 'pry'
 
 module FileSupport
   require 'json'
