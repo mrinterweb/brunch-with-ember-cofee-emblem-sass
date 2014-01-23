@@ -1,0 +1,11 @@
+# http://code.jquery.com/jquery/
+jquery:
+  generic:
+    uncompressed: http://code.jquery.com/jquery-<version>.js
+    minified: http://code.jquery.com/jquery-<version>.min.js
+  2x:
+    uncompressed: http://code.jquery.com/jquery-2.0.3.js
+    minified: http://code.jquery.com/jquery-2.0.3.min.js
+  1x:
+    uncompressed: http://code.jquery.com/jquery-1.10.2.js
+    minified: http://code.jquery.com/jquery-1.10.2.min.js

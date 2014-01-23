@@ -1,3 +1,27 @@
+require 'yaml'
+require 'pry'
+
+module Support
+  class Config
+    CONFIG_DIR = 'rake_support/config'
+    VENDOR_MAP = "#{CONFIG_DIR}/vendor_map.yml"
+
+    attr_reader :hash
+
+    def initialize(config)
+      case config
+      when :vendor_map
+        @hash = load_yaml(VENDOR_MAP)
+      else
+        raise "Config mapping undefined for: #{config}"
+      end
+    end
+
+    def load_yaml(file)
+      YAML.load_file(file)
+    end
+  end
+end
 
 module FileSupport
   require 'json'
@@ -34,7 +58,6 @@ module FileSupport
   def github_url_to_raw(url)
     url.sub("https://", "https://raw2.").sub('blob/', '')
   end
-
 end
 
 namespace :update do
@@ -81,4 +104,54 @@ namespace :update do
       download_and_move(github_url_to_raw(entry['_links']['html']), "./vendor/scripts/#{entry['name']}")
     end
   end
+
+
+  desc "link one or more specified libs and dependencies"
+  task :link_libs do |t, args|
+    libs = args.extras
+  end
+
+  desc "link all known libs"
+  task :link_all do
+
+  end
 end
+
+namespace :install do
+  include Support
+  
+  desc "install latest jquery 1.x"
+  task "jquery_1x", :option do |t, args|
+    task('install:jquery').invoke('1x', args[:option])
+  end
+
+  desc "install latest jquery 2.x"
+  task "jquery_2x", :option do |t, args|
+    puts 'jquery_2x task called'
+    task('install:jquery').invoke('2x', args[:option])
+  end
+
+  desc "install specific version of jquery"
+  task :jquery, :version, :option do |t, args|
+    puts 'jquery task called'
+    puts args.inspect
+    version = args[:version]
+    option = args[:option]
+    option = 'uncompressed' unless %w[uncompressed minified].include?(option)
+
+    conf = Support::Config.new(:vendor_map)
+
+    begin
+      url = conf.hash['jquery'][version][option]
+    rescue
+      begin
+        url = conf.hash['jquery']['generic'][option]
+        url.sub!('<version>', version)
+      rescue NoMethodError => e
+        raise "unable to find jquery with: version -> #{version}, option -> #{option}"
+      end
+    end
+    download_and_move(url, "./vendor/scripts/#{parse_name(url)}")
+  end
+end
+
