@@ -29,3 +29,5 @@ tmp/
 public/
 
 vendor/scripts/ember*
+vendor/scripts/emblem*
+vendor/scripts/handlebars*
